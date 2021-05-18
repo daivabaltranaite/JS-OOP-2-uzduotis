@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;0,900;1,300;1,900&display=swap" />
+    <title>Book List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+<div class="container">
+    <h1 class="title">
+        <span class="green">BOOK</span><span>LIST</span>
+    </h1>
+    <div class="container">
+        <label for="title">Title:</label>
+        <input type="text" name="title" id="title">
+        <label for="author">Author:</label>
+        <input type="text" name="author" id="author">
+        <label for="totalPages">Total pages:</label>
+        <input type="text" name="totalPages" id="totalPages">
+        <label for="readPages">Pages already read:</label>
+        <input type="text" name="readPages" id="readPages">
+        <label>Rating:</label>
+        <div class="rating-container">
+            <input type="radio" name="rating" id="rating1" class="rating" value="5">
+            <label class="star" for="rating1">&starf;</label>
+            <input type="radio" name="rating" id="rating2" class="rating" value="4">
+            <label class="star" for="rating2">&starf;</label>
+            <input type="radio" name="rating" id="rating3" class="rating" value="3">
+            <label class="star" for="rating3">&starf;</label>
+            <input type="radio" name="rating" id="rating4" class="rating" value="2">
+            <label class="star" for="rating4">&starf;</label>
+            <input type="radio" name="rating" id="rating5" class="rating" value="1">
+            <label class="star" for="rating5">&starf;</label>
+        </div>
+        <button class="button" onclick="addBook()">SUBMIT</button>
+        <table id="bookTable">
+            <th>Title</th>
+            <th>Author</th>
+            <th>Pages left</th>
+            <th>Rating</th>
+            <th>Actions</th>
+            <tbody id="table"></tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
